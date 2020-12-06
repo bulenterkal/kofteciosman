@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "336883790621",
+    "firebase_url": "https://kofteci-osman-app.firebaseio.com",
+    "project_id": "kofteci-osman-app",
+    "storage_bucket": "kofteci-osman-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336883790621:android:63c3144fb80bc9310c27f4",
+        "android_client_info": {
+          "package_name": "com.kofteciosmanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336883790621-sfp2ib3mke7f0bd05t2jr0qr60cicpkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjVUF0RNykISbgQTdx6hjXgeM0tN9Da1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336883790621-sfp2ib3mke7f0bd05t2jr0qr60cicpkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
