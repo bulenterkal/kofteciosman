@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04CB56A0257FF5B900608CE0 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		0812782B20626963D78B63C5 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				04CB56A0257FF5B900608CE0 /* Runner.entitlements */,
 				8EF9A5EE245D7DCD00A3FB00 /* GoogleService-Info.plist */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -172,7 +174,15 @@
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 53A44A8A7P;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -346,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -361,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 53A44A8A7P;
 				ENABLE_BITCODE = NO;
@@ -369,6 +380,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kofteciosmanapp;
 				PRODUCT_NAME = "Köfteci Osman";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Profile;
@@ -429,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -478,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -494,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 53A44A8A7P;
 				ENABLE_BITCODE = NO;
@@ -502,6 +515,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,7 +525,7 @@
 				PRODUCT_NAME = Runner;
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -522,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 53A44A8A7P;
 				ENABLE_BITCODE = NO;
@@ -530,6 +545,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kofteciosmanapp;
 				PRODUCT_NAME = "Köfteci Osman";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
